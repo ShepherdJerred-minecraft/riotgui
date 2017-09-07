@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.shepherdjerred</groupId>
+    <artifactId>RiotGUI</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+         
+    <distributionManagement>
+        <repository>
+            <id>thestorm-releases</id>
+            <name>Releases</name>
+            <url>http://ts-mc.net:8085/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>thestorm-snapshots</id>
+            <name>Snapshots</name>
+            <url>http://ts-mc.net:8085/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>${spgiot.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>15.0</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <spgiot.api.version>1.10.2-R0.1-SNAPSHOT</spgiot.api.version>
+    </properties>
+
+</project>
